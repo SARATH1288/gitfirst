@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        ar=["21","41","10"];
+        
+        let max=ar[0];
+        let min=ar[0];
+         for(i=0;i<ar.length;i++){
+            if(arr[i]>max){
+                 max=ar[i];
+            }
+            else if(arr[i]<min){
+                min=ar[i]
+            }
+         }
+        function largest(){  
+           document.write(max);
+        }
+        
+        function smallest(){
+           document.write(min);
+        }
+       document.getElementById('demo').innerHTML="largest:"+max+"<br>"+"smallest: "+min;
+       
+    </script>
+   
+  </head>
+  <body>
+ 
+    <button onclick="largest()">LARGEST</button>
+    <button onclick="smallest()">SMALL</button>
+    <div id="demo"></div>
+  </body>
+  
+</html>

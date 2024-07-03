@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill calculation</title>
+</head>
+<body>
+    <script>
+        let units = parseInt(prompt("Enter Units"));
+
+        if (units < 100) {
+            document.write("Total Bill: " + (1200 + (units / 10)));
+        }
+        else if (units >= 100 && units <= 350) {
+            document.write("Total Bill: " + (1500 + (units / 12.2)));   
+        }
+        else if (units >= 360 && units <= 500) {
+            document.write("Total Bill: " + (1700 + (units / 15.4)));
+        }
+        else if (units > 500) {
+            document.write("Total Bill: " + (2100 + (units / 18)));
+        }
+    </script>
+</body>
+</html>
